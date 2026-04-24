@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 
-import Courses from '@/components/Resume/Courses';
+
 import Education from '@/components/Resume/Education';
 import Experience from '@/components/Resume/Experience';
 import References from '@/components/Resume/References';
 import ResumeNav from '@/components/Resume/ResumeNav';
 import Skills from '@/components/Resume/Skills';
 import PageWrapper from '@/components/Template/PageWrapper';
-import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import { categories, skills } from '@/data/resume/skills';
 import work from '@/data/resume/work';
@@ -16,7 +15,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'Resume',
   description:
-    "Michael D'Angelo's Resume. OpenAI, Promptfoo, Smile ID, Arthena, Matroid, Stanford ICME, YC alum.",
+    "Kshitij Bhausaheb Pawar's Resume. Security Engineer, Rutgers University",
   path: '/resume/',
 });
 
@@ -25,14 +24,14 @@ export default function ResumePage() {
     <PageWrapper>
       <section className="resume-page">
         <header className="resume-header">
-          <h1 className="resume-title">Resume</h1>
-          <p className="resume-summary">
-            Engineering leader with 15+ years building products across AI,
-            security, and infrastructure. Currently Member of the Technical
-            Staff at OpenAI, where I work on Promptfoo and agent security.
-            Previously co-founded Promptfoo, built it into an AI security
-            platform, and sold it to OpenAI. Stanford MS, YC alum, previously VP
-            Engineering.
+          <h2 className="resume-title">Resume</h2>
+          <p className="resume-summary" style={{ maxWidth: '100%', width: '100%', fontSize: '20px', lineHeight: '1.6' }}>
+            Security Engineer with 3 years of experience in cloud security, IAM, and security program 
+            development across Azure, AWS, and GCP environments. Expertise in identity governance, 
+            Zero Trust architecture, CSPM, DevSecOps, and threat detection using Microsoft Sentinel and 
+            Google Chronicle, with a strong compliance foundation across HIPAA, NIST, and SOX frameworks. 
+            Proven ability to design and automate scalable security solutions in hybrid cloud environments serving 
+            regulated industries including healthcare and financial services. Microsoft Certified SC-100, SC-300, SC-200, AZ-500.
           </p>
         </header>
 
@@ -49,10 +48,6 @@ export default function ResumePage() {
 
           <section id="skills" className="resume-section">
             <Skills skills={skills} categories={categories} />
-          </section>
-
-          <section id="courses" className="resume-section">
-            <Courses data={courses} />
           </section>
 
           <section id="references" className="resume-section">

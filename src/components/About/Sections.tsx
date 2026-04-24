@@ -90,7 +90,17 @@ export default function AboutContent({ markdown }: AboutContentProps) {
     <article className="about-content">
       {intro ? (
         <div className="about-intro">
-          <Markdown>{intro}</Markdown>
+          <Markdown
+            options={{
+              overrides: {
+                h1: {
+                  props: { style: { fontWeight: 'normal' } },
+                },
+              },
+            }}
+          >
+            {intro}
+          </Markdown>
         </div>
       ) : null}
       {sections.length > 0 ? (
@@ -111,7 +121,7 @@ export default function AboutContent({ markdown }: AboutContentProps) {
           key={section.id}
           className={getSectionClassName(section.title)}
         >
-          <h2 id={section.id}>
+          <h2 id={section.id} style={{ fontWeight: 'normal' }}>
             <a href={`#${section.id}`} className="about-section-heading-link">
               <span>{section.title}</span>
               <span className="about-section-heading-hash" aria-hidden="true">
@@ -122,6 +132,23 @@ export default function AboutContent({ markdown }: AboutContentProps) {
           <Markdown>{section.body}</Markdown>
         </section>
       ))}
+      <style>
+        {`
+          .about-content h1 {
+            font-weight: normal !important;
+          }
+
+          .about-section-heading-link span {
+            color: inherit !important;
+          }
+
+          
+          .about-section p,
+          .about-section li {
+            color: inherit !important;
+          }
+        `}
+      </style>
     </article>
   );
 }

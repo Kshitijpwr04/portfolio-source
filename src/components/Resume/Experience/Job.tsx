@@ -12,7 +12,7 @@ export default function Job({ data }: JobProps) {
   const { name, position, url, startDate, endDate, summary, highlights } = data;
 
   return (
-    <article className="jobs-container">
+    <div>
       <header>
         <h4>
           <a href={url}>{name}</a> - {position}
@@ -38,6 +38,6 @@ export default function Job({ data }: JobProps) {
           ))}
         </ul>
       ) : null}
-    </article>
+    </div>
   );
 }

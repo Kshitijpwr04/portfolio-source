@@ -9,52 +9,35 @@ export default function Footer() {
   const currentRole = `${work[0].position} at ${work[0].name}`;
 
   return (
-    <footer className="site-footer-new">
-      <div className="footer-content">
-        <div className="footer-identity">
-          <Link href="/" className="footer-avatar">
-            <ThemePortrait width={80} height={80} />
-          </Link>
-          <div className="footer-info">
-            <h3>Michael D&apos;Angelo</h3>
-            <p className="footer-role">{currentRole}</p>
-            <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} ·{' '}
-              <a
-                href="https://github.com/mldangelo/personal-site"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source
-              </a>
-            </p>
+    <div
+      style={{
+        position: 'fixed',
+        left: '20px',
+        top: '20px',
+        width: '18%',
+        height: 'calc(100vh - 50px)',
+        overflowY: 'auto',
+        background: 'var(--color-bg)',
+        border: '1px solid #c9a96a',
+        padding: '40px 20px',
+        borderRadius: '20px',
+        textAlign: 'center',
+      }}
+    >
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '40px' }}>
+          <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto', border: '2px solid #c9a96a' }}>
+            <ThemePortrait width={180} height={180} />
           </div>
+          <h2 style={{ marginTop: '15px', color: 'var(--color-fg-bold)', fontFamily: "'Times New Roman', Times, serif", fontWeight: 400, textAlign: 'center' }}>Kshitij Bhausaheb Pawar</h2>
+          <p style={{ opacity: 0.8, color: 'var(--color-fg-light)', textAlign: 'center' }}>{currentRole}</p>
         </div>
 
-        <div className="footer-right">
-          <nav className="footer-links" aria-labelledby="footer-links-heading">
-            <h4 id="footer-links-heading" className="footer-links-label">
-              Explore
-            </h4>
-            <div className="footer-links-grid">
-              <Link href="/about">About</Link>
-              <Link href="/resume">Resume</Link>
-              <Link href="/projects">Projects</Link>
-              <Link href="/contact">Contact</Link>
-            </div>
-          </nav>
-
-          <div
-            className="footer-social"
-            aria-labelledby="footer-social-heading"
-          >
-            <h4 id="footer-social-heading" className="footer-social-label">
-              Connect
-            </h4>
-            <ContactIcons />
-          </div>
+        <div>
+          <h4 style={{ marginBottom: '10px', color: 'var(--color-fg-bold)', fontFamily: "'Times New Roman', Times, serif", fontWeight: 400, textAlign: 'center' }}>Connect</h4>
+          <ContactIcons />
         </div>
       </div>
-    </footer>
+    </div>
   );
 }

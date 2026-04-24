@@ -1,3 +1,13 @@
+/* Light mode override */
+[data-theme='light'] {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f9f9f9;
+  --color-fg: #222222;
+  --color-fg-bold: #000000;
+  --color-fg-light: #555555;
+  --color-accent: #333333;
+}
+
 /* ========================================
    DARK MODE
    Supports both system preference and manual toggle
@@ -21,8 +31,8 @@
   --color-overlay-darker: rgba(0, 0, 0, 0.5);
 
   /* Accent colors */
-  --color-accent: #60a5fa;
-  --color-accent-hover: #93c5fd;
+  --color-accent: #c9a96a;
+  --color-accent-hover: #d4b97a;
   --color-accent-light: color-mix(in srgb, var(--color-accent) 22%, transparent);
   --color-accent-subtle: color-mix(in srgb, var(--color-accent) 15%, transparent);
   --color-accent-border: color-mix(in srgb, var(--color-accent) 50%, transparent);
@@ -200,4 +210,10 @@
 [data-theme='dark'] .prose p a:hover,
 [data-theme='dark'] .prose li a:hover {
   background-image: none;
+}
+
+
+/* Google Scholar icon - lighter in dark mode */
+[data-theme='dark'] .contact-content .icons img[alt='Google Scholar'] {
+  filter: invert(1) grayscale(100%) opacity(0.6) !important;
 }

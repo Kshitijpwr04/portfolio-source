@@ -42,3 +42,28 @@
 
 /* Theme Overrides */
 @import './styles/dark-mode.css';
+
+/* Headings font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* KP Stamp Watermark */
+html::after {
+  content: '';
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 220px;
+  height: 220px;
+  background: url('/images/kp-stamp.png') no-repeat center;
+  background-size: contain;
+  opacity: 1;
+  filter: brightness(0.6) saturate(2);
+  
+  transform-origin: center;
+  display: block;
+  pointer-events: none;
+  z-index: 9999;
+}

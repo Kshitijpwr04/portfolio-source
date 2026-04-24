@@ -19,11 +19,11 @@ const routes: Route[] = [
     path: '/resume',
   },
   {
-    label: 'Writing',
+    label: 'Projects',
     path: '/writing',
   },
   {
-    label: 'Stats',
+    label: 'Publications',
     path: '/stats',
   },
   {
@@ -31,7 +31,7 @@ const routes: Route[] = [
     path: '/contact',
   },
   {
-    label: 'Archive',
+    label: 'Articles',
     path: '/projects',
   },
 ];

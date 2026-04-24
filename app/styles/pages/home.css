@@ -1,3 +1,10 @@
+:root {
+  --color-fg: #e9dcc6;
+  --color-fg-bold: #f3e8d9;
+  --color-fg-light: #cfc2a8;
+  --color-accent: #c9a96a;
+}
+
 /* ========================================
    HOME PAGE STYLES
    Hero and home sections

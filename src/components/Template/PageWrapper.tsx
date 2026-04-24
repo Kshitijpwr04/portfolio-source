@@ -4,6 +4,7 @@ interface PageWrapperProps {
   children: React.ReactNode;
   hideFooter?: boolean;
   mainClassName?: string;
+  fullWidth?: boolean;
 }
 
 /**
@@ -15,10 +16,18 @@ export default function PageWrapper({
   children,
   hideFooter = false,
   mainClassName,
+  fullWidth = false,
 }: PageWrapperProps) {
   return (
     <div className="page-container">
-      <main className={['page-main', mainClassName].filter(Boolean).join(' ')}>
+      <main
+        className={['page-main', mainClassName].filter(Boolean).join(' ')}
+        style={{
+          width: fullWidth ? '100%' : '80%',
+          maxWidth: fullWidth ? 'none' : '1200px',
+          margin: '0 auto',
+        }}
+      >
         {children}
       </main>
       {!hideFooter && <Footer />}

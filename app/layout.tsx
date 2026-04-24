@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Raleway, Source_Sans_3 } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 
 import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
@@ -8,22 +8,17 @@ import ScrollToTop from '@/components/Template/ScrollToTop';
 import { AUTHOR_NAME, SITE_URL, TWITTER_HANDLE } from '@/lib/utils';
 import './tailwind.css';
 
-const sourceSans = Source_Sans_3({
-  weight: ['400', '700'],
+
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-source-sans',
+  variable: '--font-inter',
   display: 'swap',
-  preload: true,
-  adjustFontFallback: true,
 });
 
-const raleway = Raleway({
-  weight: ['400', '800'],
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-raleway',
+  variable: '--font-playfair',
   display: 'swap',
-  preload: true,
-  adjustFontFallback: true,
 });
 
 const siteDescription =
@@ -93,7 +88,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sourceSans.variable} ${raleway.variable}`}
+      className={`${inter.variable} ${playfair.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -102,11 +97,20 @@ export default function RootLayout({
           {`(function(){try{var t=window.localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark')}else{document.documentElement.setAttribute('data-theme','light')}}catch(e){}})();`}
         </Script>
       </head>
-      <body>
+      <body
+        style={{
+          fontFamily: "'Courier New', Courier, monospace",
+          fontWeight: 600,
+          letterSpacing: '0.5px',
+          lineHeight: '1.7',
+        }}
+      >
         <ScrollToTop />
-        <div className="site-wrapper">
+        <div className="site-wrapper" style={{ marginLeft: '10%', width: '100%' }}>
           <Navigation />
-          {children}
+          <div style={{ padding: '16px 24px', width: '100%', maxWidth: 'none' }}>
+            {children}
+          </div>
         </div>
         <GoogleAnalytics />
       </body>

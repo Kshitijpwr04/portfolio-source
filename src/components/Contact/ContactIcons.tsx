@@ -13,7 +13,20 @@ export default function ContactIcons() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={s.icon} className="size-5" />
+            {typeof s.icon === 'string' ? (
+              <img
+                src={s.icon}
+                alt={s.label}
+                className="size-5"
+                style={{
+                  filter: s.label === 'Google Scholar'
+                    ? 'grayscale(100%) opacity(0.7)'
+                    : 'grayscale(100%) opacity(0.7)',
+                }}
+              />
+            ) : (
+              <FontAwesomeIcon icon={s.icon} className="size-5" />
+            )}
           </a>
         </li>
       ))}

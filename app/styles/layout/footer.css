@@ -5,12 +5,9 @@
 
 /* Footer container - distinct from page with subtle gradient */
 .site-footer-new {
-  background: linear-gradient(
-    to bottom,
-    var(--color-bg-alt) 0%,
-    color-mix(in srgb, var(--color-bg-alt) 94%, black) 100%
-  );
-  border-top: 1px solid var(--color-border-alt);
+  background: var(--color-bg);
+  border: 1px solid var(--color-fg);
+  border-radius: 12px;
   padding: 3rem 1.5rem 1.75rem;
   margin-top: auto;
 }
@@ -201,4 +198,17 @@
   border-color: var(--color-accent);
   color: var(--color-accent);
   background: transparent;
+}
+
+/* Theme-based inversion */
+[data-theme='light'] .site-footer-new {
+  background: #ffffff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+[data-theme='dark'] .site-footer-new {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
 }

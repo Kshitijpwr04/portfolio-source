@@ -4,34 +4,33 @@ import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" style={{ paddingTop: '0px' }}>
       <div className="hero-content">
-        <div className="hero-avatar">
-          <ThemePortrait width={160} height={160} priority />
+        <div className="hero-avatar" style={{ width: '280px', height: '280px' }}>
+          <ThemePortrait width={250} height={250} priority />
         </div>
 
         <h1 className="hero-title">
-          <span className="hero-name">Michael D&apos;Angelo</span>
+          <span className="hero-name">Kshitij Bhausaheb Pawar</span>
         </h1>
 
         <p className="hero-tagline">
-          Member of the Technical Staff at{' '}
+          Security Engineer working with {' '}
           <a href="https://openai.com" className="hero-highlight">
-            OpenAI
+            Azure, AWS & GCP
           </a>
-          , where I work on{' '}
+          , Expert in Identity and Access Mangament, SIEM and DevSecOps{' '}
           <a href="https://promptfoo.dev" className="hero-highlight">
-            Promptfoo
           </a>{' '}
-          and agent security.
+          and AI Security.
           <br />
-          Previously co-founded, scaled, and sold Promptfoo to OpenAI.
+          
         </p>
 
         <div className="hero-chips">
-          <span className="hero-chip">YC Alum</span>
-          <span className="hero-chip">Stanford ICME</span>
-          <span className="hero-chip">Co-founded Arthena & Matroid</span>
+          <span className="hero-chip">Rutgers Alum</span>
+          <span className="hero-chip">IEEE Security Researcher</span>
+          
         </div>
 
         <div className="hero-cta">
