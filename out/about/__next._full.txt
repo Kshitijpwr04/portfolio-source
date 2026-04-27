@@ -1,0 +1,64 @@
+1:"$Sreact.fragment"
+2:I[79520,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],""]
+3:I[68361,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"default"]
+4:I[63665,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"default"]
+5:I[39756,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"default"]
+6:I[37457,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"default"]
+7:I[22016,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],""]
+8:I[32316,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js","/_next/static/chunks/0yr.voi_8vpze.js","/_next/static/chunks/0y8xiqoog6ywl.js","/_next/static/chunks/0k0ladnayl_j0.js"],"default"]
+11:I[68027,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"default",1]
+:HL["/_next/static/chunks/0os1_bxa649rn.css","style"]
+:HL["/_next/static/media/2a65768255d6b625-s.p.14by5b4al-y~f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+9:T9c1,# About Me
+
+Im a cybersecurity professional specializing in Identity & Access Management (IAM), cloud security, and security engineering across multi-cloud environments. With hands-on experience spanning Azure, AWS, and GCP, I focus on designing scalable, secure, and compliant architectures aligned with modern Zero Trust principles.
+
+Currently, I work as a Security Engineer where I build and implement cloud security posture management (CSPM) programs, strengthen identity governance, and develop detection and response capabilities using platforms like Microsoft Sentinel and Google Chronicle. My work involves securing regulated environments in industries such as healthcare and financial services, ensuring compliance with frameworks like HIPAA, NIST, and SOC 2.
+
+My core strength lies in bridging security engineering with automation. Ive implemented DevSecOps practices using Terraform, Azure DevOps, and GitHub Actions, enabling organizations to enforce least-privilege access, continuous compliance, and secure infrastructure deployments at scale.
+
+Before this, I gained experience in security operations, risk analysis, and digital forensics—working on everything from identity lifecycle management and SIEM-based threat detection to risk assessments for critical infrastructure systems. This diverse background allows me to approach security from both a technical and governance perspective.
+
+I hold multiple Microsoft certifications, including Cybersecurity Architect Expert (SC-100), and earned my Master’s in Cybersecurity from Rutgers University, where I built a strong foundation in both technical and business aspects of security.
+
+# What I Focus On
+
+- Identity & Access Management (Entra ID, Okta, SailPoint)
+- Cloud Security (Azure, AWS, GCP)
+- Zero Trust Architecture
+- SIEM & Threat Detection Engineering
+- DevSecOps & Security Automation
+- Compliance & Risk (HIPAA, NIST, SOC 2)
+
+# My Approach
+
+I believe security should be built-in, not bolted on. My approach focuses on:
+
+- Automating security wherever possible
+- Designing with least privilege and Zero Trust principles
+- Aligning security with business and compliance requirements
+- Continuously improving detection and response capabilities
+
+# Beyond Work
+
+I’m actively building a long-term cybersecurity project that combines IAM, cloud security, automation, and detection engineering into a unified platform. The goal is to simulate real-world enterprise environments and continuously sharpen practical skills.
+0:{"P":null,"c":["","about",""],"q":"","i":false,"f":[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0os1_bxa649rn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/03m2sozln9nvf.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0s25wp92bhuv~.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"inter_c15e96cb-module__0bjUvq__variable playfair_display_fed1534a-module__F9WnGq__variable","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","$L2",null,{"id":"theme-init","strategy":"beforeInteractive","children":"(function(){try{var t=window.localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark')}else{document.documentElement.setAttribute('data-theme','light')}}catch(e){}})();"}]}],["$","body",null,{"style":{"fontFamily":"'Courier New', Courier, monospace","fontWeight":600,"letterSpacing":"0.5px","lineHeight":"1.7"},"children":[["$","$L3",null,{}],["$","div",null,{"className":"site-wrapper","style":{"marginLeft":"10%","width":"100%"},"children":[["$","$L4",null,{}],["$","div",null,{"style":{"padding":"16px 24px","width":"100%","maxWidth":"none"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"not-found-page","children":["$","div",null,{"className":"not-found-content","children":[["$","span",null,{"className":"not-found-code","children":"404"}],["$","h1",null,{"className":"not-found-title","children":"Page Not Found"}],["$","p",null,{"className":"not-found-message","children":"The page you're looking for doesn't exist or has been moved."}],["$","div",null,{"className":"not-found-actions","children":[["$","$L7",null,{"href":"/","className":"not-found-button","children":"Go Home"}],["$","$L7",null,{"href":"/contact","className":"not-found-link","children":"Contact Me"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}],null]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"className":"page-container","style":{"display":"flex","flexDirection":"column","width":"100%"},"children":[["$","main",null,{"className":"page-main page-main--wide","style":{"width":"100%","maxWidth":"min(1200px, 100%)","marginLeft":"auto","marginRight":"auto","padding":"0 16px","boxSizing":"border-box"},"children":["$","section",null,{"className":"about-page","children":[["$","header",null,{"className":"about-header","children":["$","h1",null,{"className":"page-title","children":"About"}]}],["$","$L8",null,{"markdown":"$9"}]]}]}],"$La"]}],["$Lb","$Lc","$Ld"],"$Le"]}],{},null,false,null]},null,false,"$@f"]},null,false,null],"$L10",false]],"m":"$undefined","G":["$11",["$L12"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"Xrtrjqn0yHnpj895_tXoJ"}
+13:I[61818,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js","/_next/static/chunks/0yr.voi_8vpze.js","/_next/static/chunks/0y8xiqoog6ywl.js","/_next/static/chunks/0k0ladnayl_j0.js"],"default"]
+14:I[97367,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"OutletBoundary"]
+15:"$Sreact.suspense"
+18:I[97367,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"ViewportBoundary"]
+1a:I[97367,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"MetadataBoundary"]
+a:["$","$L13",null,{}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/0yr.voi_8vpze.js","async":true,"nonce":"$undefined"}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/0y8xiqoog6ywl.js","async":true,"nonce":"$undefined"}]
+d:["$","script","script-2",{"src":"/_next/static/chunks/0k0ladnayl_j0.js","async":true,"nonce":"$undefined"}]
+e:["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]
+17:[]
+f:"$W17"
+10:["$","$1","h",{"children":[null,["$","$L18",null,{"children":"$L19"}],["$","div",null,{"hidden":true,"children":["$","$L1a",null,{"children":["$","$15",null,{"name":"Next.Metadata","children":"$L1b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+12:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0os1_bxa649rn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"IconMark"]
+16:null
+1b:[["$","title","0",{"children":"About | Kshitij Bhausaheb Pawar"}],["$","meta","1",{"name":"description","content":"Learn about Michael D'Angelo - Member of the Technical Staff at OpenAI and builder across AI, security, and infrastructure."}],["$","meta","2",{"name":"author","content":"Kshitij Bhausaheb Pawar"}],["$","meta","3",{"name":"keywords","content":"Kshitij Bhausaheb Pawar,OpenAI,Promptfoo,agent security,LLM security,machine learning,startup founder,YC"}],["$","meta","4",{"name":"creator","content":"Kshitij Bhausaheb Pawar"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","7",{"property":"og:title","content":"About | Kshitij Bhausaheb Pawar"}],["$","meta","8",{"property":"og:description","content":"Learn about Michael D'Angelo - Member of the Technical Staff at OpenAI and builder across AI, security, and infrastructure."}],["$","meta","9",{"property":"og:url","content":"https://kshitijpwr04.github.io/about/"}],["$","meta","10",{"property":"og:site_name","content":"Kshitij Bhausaheb Pawar"}],["$","meta","11",{"property":"og:locale","content":"en_US"}],["$","meta","12",{"property":"og:image","content":"https://kshitijpwr04.github.io/images/me.jpg"}],["$","meta","13",{"property":"og:image:width","content":"1200"}],["$","meta","14",{"property":"og:image:height","content":"630"}],["$","meta","15",{"property":"og:image:alt","content":"Kshitij Bhausaheb Pawar"}],["$","meta","16",{"property":"og:type","content":"website"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"About | Kshitij Bhausaheb Pawar"}],["$","meta","19",{"name":"twitter:description","content":"Learn about Michael D'Angelo - Member of the Technical Staff at OpenAI and builder across AI, security, and infrastructure."}],["$","meta","20",{"name":"twitter:image","content":"https://kshitijpwr04.github.io/images/me.jpg"}],["$","link","21",{"rel":"icon","href":"/favicon.ico?favicon.022useww-_sz0.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1c","22",{}]]

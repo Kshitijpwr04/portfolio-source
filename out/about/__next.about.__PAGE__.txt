@@ -1,0 +1,40 @@
+1:"$Sreact.fragment"
+2:I[32316,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js","/_next/static/chunks/0yr.voi_8vpze.js","/_next/static/chunks/0y8xiqoog6ywl.js","/_next/static/chunks/0k0ladnayl_j0.js"],"default"]
+4:I[61818,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js","/_next/static/chunks/0yr.voi_8vpze.js","/_next/static/chunks/0y8xiqoog6ywl.js","/_next/static/chunks/0k0ladnayl_j0.js"],"default"]
+5:I[97367,["/_next/static/chunks/03m2sozln9nvf.js","/_next/static/chunks/0s25wp92bhuv~.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+3:T9c1,# About Me
+
+Im a cybersecurity professional specializing in Identity & Access Management (IAM), cloud security, and security engineering across multi-cloud environments. With hands-on experience spanning Azure, AWS, and GCP, I focus on designing scalable, secure, and compliant architectures aligned with modern Zero Trust principles.
+
+Currently, I work as a Security Engineer where I build and implement cloud security posture management (CSPM) programs, strengthen identity governance, and develop detection and response capabilities using platforms like Microsoft Sentinel and Google Chronicle. My work involves securing regulated environments in industries such as healthcare and financial services, ensuring compliance with frameworks like HIPAA, NIST, and SOC 2.
+
+My core strength lies in bridging security engineering with automation. Ive implemented DevSecOps practices using Terraform, Azure DevOps, and GitHub Actions, enabling organizations to enforce least-privilege access, continuous compliance, and secure infrastructure deployments at scale.
+
+Before this, I gained experience in security operations, risk analysis, and digital forensics—working on everything from identity lifecycle management and SIEM-based threat detection to risk assessments for critical infrastructure systems. This diverse background allows me to approach security from both a technical and governance perspective.
+
+I hold multiple Microsoft certifications, including Cybersecurity Architect Expert (SC-100), and earned my Master’s in Cybersecurity from Rutgers University, where I built a strong foundation in both technical and business aspects of security.
+
+# What I Focus On
+
+- Identity & Access Management (Entra ID, Okta, SailPoint)
+- Cloud Security (Azure, AWS, GCP)
+- Zero Trust Architecture
+- SIEM & Threat Detection Engineering
+- DevSecOps & Security Automation
+- Compliance & Risk (HIPAA, NIST, SOC 2)
+
+# My Approach
+
+I believe security should be built-in, not bolted on. My approach focuses on:
+
+- Automating security wherever possible
+- Designing with least privilege and Zero Trust principles
+- Aligning security with business and compliance requirements
+- Continuously improving detection and response capabilities
+
+# Beyond Work
+
+I’m actively building a long-term cybersecurity project that combines IAM, cloud security, automation, and detection engineering into a unified platform. The goal is to simulate real-world enterprise environments and continuously sharpen practical skills.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"page-container","style":{"display":"flex","flexDirection":"column","width":"100%"},"children":[["$","main",null,{"className":"page-main page-main--wide","style":{"width":"100%","maxWidth":"min(1200px, 100%)","marginLeft":"auto","marginRight":"auto","padding":"0 16px","boxSizing":"border-box"},"children":["$","section",null,{"className":"about-page","children":[["$","header",null,{"className":"about-header","children":["$","h1",null,{"className":"page-title","children":"About"}]}],["$","$L2",null,{"markdown":"$3"}]]}]}],["$","$L4",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/0yr.voi_8vpze.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0y8xiqoog6ywl.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/0k0ladnayl_j0.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Xrtrjqn0yHnpj895_tXoJ"}
+7:null
