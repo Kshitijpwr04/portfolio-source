@@ -1,11 +1,11 @@
 import type { CSSProperties } from 'react';
 
-import type { Category, Skill } from '@/data/resume/skills';
+import type { Skill } from '@/data/resume/skills';
 import { MAX_COMPETENCY } from '@/lib/utils';
 
 interface SkillBarProps {
   data: Skill;
-  categories: Category[];
+  categories: any[];
 }
 
 export default function SkillBar({ data, categories }: SkillBarProps) {

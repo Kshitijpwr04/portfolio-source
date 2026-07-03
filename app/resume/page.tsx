@@ -25,7 +25,7 @@ export default function ResumePage() {
       <section className="resume-page">
         <header className="resume-header">
           <h2 className="resume-title">Resume</h2>
-          <p className="resume-summary" style={{ maxWidth: '100%', width: '100%', fontSize: '20px', lineHeight: '1.6' }}>
+          <p className="resume-summary" style={{ maxWidth: '100%', width: '100%', fontSize: '18px', lineHeight: '1.6' }}>
             Security Engineer with 3 years of experience in cloud security, IAM, and security program 
             development across Azure, AWS, and GCP environments. Expertise in identity governance, 
             Zero Trust architecture, CSPM, DevSecOps, and threat detection using Microsoft Sentinel and 

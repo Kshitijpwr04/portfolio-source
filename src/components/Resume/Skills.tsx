@@ -3,7 +3,12 @@
 import React, { useMemo, useState } from 'react';
 import { skills as allSkills } from '@/data/resume/skills';
 
-export default function Skills() {
+type SkillsProps = {
+  skills: any[];
+  categories: { name: string }[];
+};
+
+export default function Skills({ skills, categories }: SkillsProps) {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
   // Group skills by primary category
@@ -16,7 +21,7 @@ export default function Skills() {
     }, {});
   }, []);
 
-  const categories = Object.keys(grouped);
+  const categoryKeys = Object.keys(grouped);
 
   const toggle = (cat: string) => {
     setExpanded((prev) => ({ ...prev, [cat]: !prev[cat] }));
@@ -38,7 +43,7 @@ export default function Skills() {
           alignItems: 'start',
         }}
       >
-        {categories.map((cat) => {
+        {categoryKeys.map((cat) => {
           const items = grouped[cat];
           const firstSix = items.slice(0, 6);
           const rest = items.slice(6);
@@ -47,25 +52,51 @@ export default function Skills() {
             <div key={cat}>
               <h4 style={{ marginBottom: '8px' }}>{cat}</h4>
 
-              <ul style={{ paddingLeft: '18px', lineHeight: 1.8, margin: 0 }}>
-                {firstSix.map((skill, i) => (
-                  <li key={i}>{skill}</li>
+              <ul
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '4px',
+                  padding: 0,
+                  margin: 0,
+                  listStyle: 'none'
+                }}
+              >
+                {firstSix.map((skill: string, i: number) => (
+                  <li key={i} style={{ marginBottom: '2px' }}>{skill}</li>
                 ))}
               </ul>
 
               {rest.length > 0 && (
                 <>
                   {expanded[cat] && (
-                    <ul style={{ paddingLeft: '18px', marginTop: '8px', lineHeight: 1.8, marginBottom: 0 }}>
-                      {rest.map((skill, i) => (
-                        <li key={i}>{skill}</li>
+                    <ul
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '4px',
+                        padding: 0,
+                        marginTop: '8px',
+                        listStyle: 'none'
+                      }}
+                    >
+                      {rest.map((skill: string, i: number) => (
+                        <li key={i} style={{ marginBottom: '2px' }}>{skill}</li>
                       ))}
                     </ul>
                   )}
 
                   <button
                     onClick={() => toggle(cat)}
-                    style={{ marginTop: '8px', cursor: 'pointer' }}
+                    style={{
+                      marginTop: '8px',
+                      cursor: 'pointer',
+                      fontSize: '12px',
+                      padding: '4px 10px',
+                      border: '1px solid #c9a96a',
+                      borderRadius: '6px',
+                      background: 'transparent'
+                    }}
                   >
                     {expanded[cat] ? 'Show Less' : 'Show More'}
                   </button>

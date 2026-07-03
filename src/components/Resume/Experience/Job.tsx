@@ -14,8 +14,18 @@ export default function Job({ data }: JobProps) {
   return (
     <div>
       <header>
-        <h4>
-          <a href={url}>{name}</a> - {position}
+        <h4
+          style={{
+            fontFamily: 'var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace)',
+            fontWeight: 600,
+            fontSize: '20px',
+            letterSpacing: '0.5px',
+          }}
+        >
+          <a href={url} style={{ textDecoration: 'none', color: 'inherit' }}>
+            {name}
+          </a>{' '}
+          - {position}
         </h4>
         <p className="daterange">
           {' '}
@@ -32,9 +42,19 @@ export default function Job({ data }: JobProps) {
       </header>
       {summary ? <JobSummary summary={summary} /> : null}
       {highlights ? (
-        <ul className="points">
+        <ul
+          className="points"
+          style={{
+            paddingLeft: '22px',
+            marginTop: '10px',
+            listStyleType: 'disc',
+            listStylePosition: 'outside',
+          }}
+        >
           {highlights.map((highlight) => (
-            <li key={highlight}>{highlight}</li>
+            <li key={highlight} style={{ marginBottom: '8px', display: 'list-item' }}>
+              {highlight}
+            </li>
           ))}
         </ul>
       ) : null}

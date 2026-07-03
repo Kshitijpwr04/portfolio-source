@@ -19,13 +19,23 @@ export default function PageWrapper({
   fullWidth = false,
 }: PageWrapperProps) {
   return (
-    <div className="page-container">
+    <div
+      className="page-container"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        width: '100%',
+      }}
+    >
       <main
         className={['page-main', mainClassName].filter(Boolean).join(' ')}
         style={{
-          width: fullWidth ? '100%' : '80%',
-          maxWidth: fullWidth ? 'none' : '1200px',
-          margin: '0 auto',
+          width: '100%',
+          maxWidth: fullWidth ? 'none' : 'min(1200px, 100%)',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          padding: fullWidth ? '0' : '0 16px',
+          boxSizing: 'border-box',
         }}
       >
         {children}

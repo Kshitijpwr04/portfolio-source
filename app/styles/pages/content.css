@@ -570,3 +570,20 @@
   background: var(--color-accent-light);
   transform: translateY(var(--lift-sm));
 }
+
+
+/* GLOBAL MOBILE CENTER FIX */
+@media (max-width: 768px) {
+  .about-page,
+  .contact-page,
+  .stats-page,
+  .not-found-content {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+}

@@ -2,7 +2,8 @@ export interface Degree {
   school: string;
   degree: string;
   major: string;
-  year: number;
+  year: number | string;
+  link?: string;
 }
 
 const degrees: Degree[] = [
