@@ -3,17 +3,18 @@ export interface ProjectItem {
   url: string;
   image: string;
   description: string;
+  date?: string;
 }
 
 const data: ProjectItem[] = [
   {
-    title: '    Automated identity provisioning, RBAC enforcement, and access governance across Azure, AWS, and GCP using infrastructure-as-code.',
+    title: 'Automated identity provisioning, RBAC enforcement, and access governance across Azure, AWS, and GCP using infrastructure-as-code.',
     url: 'https://github.com/yourusername/project1',
     image: '/images/project1.png',
     description: 'Terraform-based IAM automation across Azure, AWS, and GCP with RBAC and policy enforcement.',
   },
   {
-    title: '    Centralized platform integrating IAM, threat detection, and risk analytics to enable identity-driven security operations and response.',
+    title: 'Centralized platform integrating IAM, threat detection, and risk analytics to enable identity-driven security operations and response.',
     url: 'https://github.com/yourusername/project2',
     image: '/images/project2.png',
     description: 'SIEM + SOAR lab using Sentinel and Chronicle with real-time detection rules.',
