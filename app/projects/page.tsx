@@ -23,22 +23,29 @@ export default function CertificationsPage() {
           </p>
         </header>
 
-        <div className="certifications-grid">
+        <div className="projects-grid" style={{ width: '100%' }}>
           {certifications.map((cert) => (
-            <div className="certification-card" key={cert.code}>
-              <div className="certification-image-wrap">
-                <img
-                  src={cert.image}
-                  alt={`${cert.issuer}: ${cert.title} (${cert.code})`}
-                  className="certification-image"
-                />
-              </div>
-              <div className="certification-content">
-                <p className="certification-issuer">{cert.issuer}</p>
-                <h2 className="certification-title">
-                  {cert.title} ({cert.code})
-                </h2>
-              </div>
+            <div key={cert.code} style={{ width: '100%', maxWidth: '100%' }}>
+              <img
+                src={cert.image}
+                alt={`${cert.issuer}: ${cert.title} (${cert.code})`}
+                style={{
+                  width: '100%',
+                  aspectRatio: '16 / 9',
+                  objectFit: 'cover',
+                  borderRadius: '12px',
+                }}
+              />
+              <h2
+                style={{
+                  marginTop: '15px',
+                  fontSize: '18px',
+                  fontFamily: 'Courier New, Courier, monospace',
+                  fontWeight: 'bold',
+                }}
+              >
+                {cert.title} ({cert.code})
+              </h2>
             </div>
           ))}
         </div>
