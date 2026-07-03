@@ -33,7 +33,7 @@ export default function Job({ data }: JobProps) {
             {dayjs(startDate).format('MMMM YYYY')}
           </time>{' '}
           -{' '}
-          {endDate ? (
+          {endDate && endDate.toLowerCase() !== 'present' ? (
             <time dateTime={endDate}>{dayjs(endDate).format('MMMM YYYY')}</time>
           ) : (
             'Present'
