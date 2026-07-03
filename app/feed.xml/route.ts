@@ -1,6 +1,6 @@
 import writing from '@/data/writing';
 import { getAllPosts } from '@/lib/posts';
-import { SITE_URL } from '@/lib/utils';
+import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
 
 export const dynamic = 'force-static';
 
@@ -38,7 +38,7 @@ export async function GET() {
 
   // Get external articles
   const externalItems: FeedItem[] = writing
-    .filter((item) => item.date)
+    .filter((item): item is typeof item & { date: string } => Boolean(item.date))
     .map((item) => ({
       title: item.title,
       url: item.url,
@@ -67,9 +67,9 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Michael D'Angelo - Writing</title>
+    <title>${AUTHOR_NAME} - Writing</title>
     <link>${SITE_URL}/writing/</link>
-    <description>Articles on AI security, LLM red teaming, and trust &amp; safety by Michael D'Angelo.</description>
+    <description>Articles on security engineering by ${AUTHOR_NAME}.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>${rssItems}

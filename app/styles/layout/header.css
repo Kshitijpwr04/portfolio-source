@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 /* ========================================
    HEADER LAYOUT
    Fixed navigation with glassmorphism
@@ -19,12 +21,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: var(--z-header);
+  z-index: 9999;
   transition: background-color var(--duration-fast) var(--ease-out);
   box-sizing: border-box;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 1199px) {
   .site-header {
     height: var(--header-height-mobile);
     line-height: var(--header-height-mobile);
@@ -51,6 +53,33 @@
 
 body.is-menu-visible .site-wrapper {
   opacity: 0.15;
+}
+
+/* Desktop: shift content clear of the fixed left sidebar (.sidebar-container).
+   Keeps margin-left + width summing to 100% so the wrapper never overflows
+   the viewport (unlike the old unconditional 10% margin + 100% width). */
+@media screen and (min-width: 1200px) {
+  .site-wrapper {
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
+/* Content wrapper for {children}, sibling of <Navigation/> inside .site-wrapper */
+.site-content {
+  padding: 16px 24px;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+/* Mobile/tablet: the fixed vertical nav strip sits at left:20px, width:48px
+   (right edge at 68px) - pad content clear of it instead of relying on the
+   sidebar-clearance margin above, which only applies at desktop widths. */
+@media screen and (max-width: 1199px) {
+  .site-content {
+    padding-left: 84px;
+  }
 }
 
 /* Main content */
@@ -121,7 +150,7 @@ body.is-menu-visible .site-wrapper {
   display: none;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 1199px) {
   .hamburger-container {
     display: block;
   }

@@ -3,9 +3,12 @@
  */
 
 // Site configuration
-export const SITE_URL = 'https://mldangelo.com';
-export const AUTHOR_NAME = "Michael D'Angelo";
-export const TWITTER_HANDLE = '@dangelosaurus';
+// BASE_PATH matches next.config.ts's basePath - set by CI to the project-pages
+// subpath since this repo isn't <user>.github.io. Empty locally.
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+export const SITE_URL = `https://kshitijpwr04.github.io${BASE_PATH}`;
+export const AUTHOR_NAME = 'Kshitij Bhausaheb Pawar';
+export const TWITTER_HANDLE = '';
 
 // Image dimension constants
 export const AVATAR_SIZE = {

@@ -40,14 +40,7 @@ export default function WritingPage() {
           </div>
         </header>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '40px',
-            width: '100%',
-          }}
-        >
+        <div className="projects-grid" style={{ width: '100%' }}>
           {writing.map((project) => (
             <a
               key={project.title}

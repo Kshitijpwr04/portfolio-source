@@ -1,3 +1,8 @@
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
 @import 'tailwindcss';
 
 /* ========================================
@@ -36,6 +41,7 @@
 @import './styles/pages/resume.css';
 @import './styles/pages/writing.css';
 @import './styles/pages/content.css';
+@import './styles/pages/blog.css';
 
 /* Utilities & Animations */
 @import './styles/utilities.css';
@@ -65,5 +71,49 @@ html::after {
   transform-origin: center;
   display: block;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  html::after {
+    width: 120px;
+    height: 120px;
+    opacity: 0.4;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* Responsive text scaling */
+h1 {
+  font-size: clamp(24px, 4vw, 36px);
+}
+
+h2 {
+  font-size: clamp(18px, 3vw, 24px);
+}
+
+p {
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+/* Mobile spacing */
+.page-main {
+  padding: 0 16px;
+}
+
+
+@media (max-width: 1199px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+
+
+/* FINAL FIX: hide desktop nav completely on mobile */
+@media (max-width: 1199px) {
+  .nav-links,
+  .nav-link {
+    display: none !important;
+  }
 }

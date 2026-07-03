@@ -13,7 +13,7 @@ export function createPageMetadata({
   description,
   path,
 }: PageMetadataOptions): Metadata {
-  const absoluteUrl = path ? new URL(path, SITE_URL).toString() : undefined;
+  const absoluteUrl = path ? `${SITE_URL}${path}` : undefined;
   const pageTitle = `${title} | ${AUTHOR_NAME}`;
 
   return {
@@ -28,7 +28,7 @@ export function createPageMetadata({
       ...(absoluteUrl ? { url: absoluteUrl } : {}),
       images: [
         {
-          url: '/images/me.jpg',
+          url: `${SITE_URL}/images/me.jpg`,
           width: 1200,
           height: 630,
           alt: AUTHOR_NAME,
@@ -41,7 +41,7 @@ export function createPageMetadata({
       creator: TWITTER_HANDLE,
       title: pageTitle,
       description,
-      images: ['/images/me.jpg'],
+      images: [`${SITE_URL}/images/me.jpg`],
     },
   };
 }

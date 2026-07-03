@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, JetBrains_Mono, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 
 import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
@@ -7,7 +7,6 @@ import Navigation from '@/components/Template/Navigation';
 import ScrollToTop from '@/components/Template/ScrollToTop';
 import { AUTHOR_NAME, SITE_URL, TWITTER_HANDLE } from '@/lib/utils';
 import './tailwind.css';
-
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,8 +20,15 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
-const siteDescription =
-  'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.';
+// Loaded once here so any page can opt in via the `.font-mono` wrapper
+// class (see app/styles/pages/blog.css) without per-post font-family rules.
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  display: 'swap',
+});
+
+const siteDescription = 'Security Engineer';
 
 export const metadata: Metadata = {
   title: {
@@ -32,13 +38,11 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     AUTHOR_NAME,
-    'OpenAI',
-    'Promptfoo',
-    'agent security',
-    'LLM security',
-    'machine learning',
-    'startup founder',
-    'YC',
+    'Security Engineer',
+    'IAM',
+    'cloud security',
+    'Zero Trust',
+    'DevSecOps',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,
@@ -52,7 +56,7 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: '/images/me.jpg',
+        url: `${SITE_URL}/images/me.jpg`,
         width: 1200,
         height: 630,
         alt: AUTHOR_NAME,
@@ -65,7 +69,7 @@ export const metadata: Metadata = {
     creator: TWITTER_HANDLE,
     title: AUTHOR_NAME,
     description: siteDescription,
-    images: ['/images/me.jpg'],
+    images: [`${SITE_URL}/images/me.jpg`],
   },
   robots: {
     index: true,
@@ -88,7 +92,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable}`}
+      className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -106,11 +110,9 @@ export default function RootLayout({
         }}
       >
         <ScrollToTop />
-        <div className="site-wrapper" style={{ marginLeft: '10%', width: '100%' }}>
+        <div className="site-wrapper">
           <Navigation />
-          <div style={{ padding: '16px 24px', width: '100%', maxWidth: 'none' }}>
-            {children}
-          </div>
+          <div className="site-content">{children}</div>
         </div>
         <GoogleAnalytics />
       </body>

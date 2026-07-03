@@ -1,11 +1,11 @@
 {
   "name": "personal-site",
   "version": "4.1.0",
-  "homepage": "https://mldangelo.com/",
+  "homepage": "https://kshitijpwr04.github.io/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mldangelo/personal-site.git"
+    "url": "https://github.com/kshitijpwr04/portfolio-source.git"
   },
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
@@ -38,6 +38,8 @@
     "next": "^16.2.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {

@@ -1,0 +1,172 @@
+/* ========================================
+   MONOSPACE / TYPEWRITER FONT
+   Apply `.font-mono` once per page (see app/blog/page.tsx and
+   app/blog/[slug]/page.tsx). Headings/links have their own font-family
+   rules elsewhere (base/typography.css), which beat plain inheritance,
+   so this targets descendants explicitly rather than relying on
+   inheritance alone - individual posts still never set a font.
+   ======================================== */
+
+.font-mono,
+.font-mono h1,
+.font-mono h2,
+.font-mono h3,
+.font-mono h4,
+.font-mono h5,
+.font-mono h6,
+.font-mono p,
+.font-mono a,
+.font-mono li,
+.font-mono time {
+  font-family: var(--font-mono), 'Courier New', Courier, monospace;
+}
+
+/* ========================================
+   BLOG PAGES
+   Post list and individual post layout
+   ======================================== */
+
+.blog-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.blog-header {
+  margin-bottom: 2rem;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item {
+  display: block;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: background-color var(--duration-instant) var(--ease-out);
+}
+
+.blog-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.blog-item:hover {
+  background-color: var(--color-bg-alt);
+}
+
+.blog-item:hover .blog-item-title {
+  color: var(--color-accent);
+}
+
+.blog-date {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-fg-light);
+  margin-bottom: 0.25rem;
+}
+
+.blog-item-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-fg);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+  transition: color var(--duration-instant) var(--ease-out);
+}
+
+.blog-description {
+  font-size: var(--text-base);
+  color: var(--color-fg-light);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.blog-post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blog-post-title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: var(--color-fg);
+}
+
+.blog-post-description {
+  font-size: var(--text-lg);
+  color: var(--color-fg-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Rendered Markdown body (remark-html output via dangerouslySetInnerHTML) */
+.blog-content {
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-fg);
+}
+
+.blog-content h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 2rem 0 1rem;
+}
+
+.blog-content h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.blog-content p {
+  margin: 1rem 0;
+}
+
+.blog-content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-underline);
+  text-underline-offset: 2px;
+}
+
+.blog-content a:hover {
+  color: var(--color-accent-hover);
+  text-decoration-color: var(--color-accent);
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.blog-content li {
+  margin: 0.5rem 0;
+}
+
+.blog-content code {
+  font-family: var(--font-mono), 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  background: var(--color-bg-offset);
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-xs);
+}
+
+.blog-content pre {
+  background: var(--color-bg-offset);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.blog-content pre code {
+  background: none;
+  padding: 0;
+}

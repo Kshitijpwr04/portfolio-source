@@ -39,9 +39,9 @@ jobs:
           cache: "npm"
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
         with:
-          # Automatically inject basePath in Next.js config
           static_site_generator: next
 
       - name: Cache dependencies
@@ -64,6 +64,9 @@ jobs:
           NODE_ENV: production
           # Use environment variable for GA tracking ID
           NEXT_PUBLIC_GA_TRACKING_ID: ${{ vars.NEXT_PUBLIC_GA_TRACKING_ID }}
+          # This repo isn't <user>.github.io, so Pages serves it under a
+          # project subpath - configure-pages computes that subpath for us.
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Verify build output
         run: |

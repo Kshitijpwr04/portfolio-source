@@ -1,8 +1,15 @@
 import bundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
 
+// Set by CI (see .github/workflows/github-pages.yml) to the project-pages
+// subpath (e.g. "/portfolio-source") since this repo isn't <user>.github.io.
+// Empty locally, so `npm run dev`/`npm run build` still work at the root.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const nextConfig: NextConfig = {
   output: 'export',
+
+  ...(basePath ? { basePath, assetPrefix: basePath } : {}),
 
   // Allow dev server access from local network (mobile testing, etc.)
   allowedDevOrigins: ['http://192.168.*.*:3000'],
