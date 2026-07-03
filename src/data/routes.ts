@@ -19,7 +19,7 @@ const routes: Route[] = [
     path: '/resume',
   },
   {
-    label: 'Articles',
+    label: 'Projects',
     path: '/writing',
   },
   {
@@ -31,7 +31,7 @@ const routes: Route[] = [
     path: '/contact',
   },
   {
-    label: 'Projects',
+    label: 'Certifications',
     path: '/projects',
   },
   {

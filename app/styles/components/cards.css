@@ -198,6 +198,72 @@
 }
 
 /* ========================================
+   CERTIFICATION CARDS
+   ======================================== */
+
+.certifications-grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.certification-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-bg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.certification-card:hover {
+  transform: translateY(var(--lift-md));
+  border-color: var(--color-accent-border);
+  box-shadow:
+    var(--shadow-xl),
+    0 0 0 1px var(--color-accent-border);
+}
+
+.certification-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  padding: 2rem;
+  background: var(--color-bg-alt);
+}
+
+.certification-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.certification-content {
+  padding: 1.5rem;
+}
+
+.certification-issuer {
+  font-size: var(--text-sm);
+  color: var(--color-fg-light);
+  font-weight: var(--font-weight-medium);
+  margin: 0 0 0.35rem;
+}
+
+.certification-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-fg-bold);
+  margin: 0;
+}
+
+/* ========================================
    JOB CARDS
    ======================================== */
 

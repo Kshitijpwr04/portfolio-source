@@ -1,52 +1,47 @@
 import type { Metadata } from 'next';
 
-import Cell from '@/components/Projects/Cell';
 import PageWrapper from '@/components/Template/PageWrapper';
-import data from '@/data/projects';
+import certifications from '@/data/certifications';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Aricles',
+  title: 'Certifications',
   description:
-    "",
+    'Professional certifications in cloud security, identity, and DevSecOps.',
   path: '/projects/',
 });
 
-export default function ProjectsPage() {
-  const featuredProjects = data.filter((p) => p.featured);
-  const otherProjects = data.filter((p) => !p.featured);
-
+export default function CertificationsPage() {
   return (
     <PageWrapper>
       <section className="projects-page">
         <header className="projects-header">
-          <h1 className="page-title">Archive</h1>
+          <h1 className="page-title">Certifications</h1>
           <p className="page-subtitle">
-            Some of my recent articles recently published.
+            Professional certifications in cloud security, identity, and
+            DevSecOps.
           </p>
         </header>
 
-        {featuredProjects.length > 0 && (
-          <section className="projects-featured">
-            <h2 className="projects-section-title">Hackathons &amp; Awards</h2>
-            <div className="projects-grid projects-grid--featured">
-              {featuredProjects.map((project) => (
-                <Cell data={project} key={project.title} />
-              ))}
+        <div className="certifications-grid">
+          {certifications.map((cert) => (
+            <div className="certification-card" key={cert.code}>
+              <div className="certification-image-wrap">
+                <img
+                  src={cert.image}
+                  alt={`${cert.issuer}: ${cert.title} (${cert.code})`}
+                  className="certification-image"
+                />
+              </div>
+              <div className="certification-content">
+                <p className="certification-issuer">{cert.issuer}</p>
+                <h2 className="certification-title">
+                  {cert.title} ({cert.code})
+                </h2>
+              </div>
             </div>
-          </section>
-        )}
-
-        {otherProjects.length > 0 && (
-          <section className="projects-other">
-            <h2 className="projects-section-title">Side Projects</h2>
-            <div className="projects-grid">
-              {otherProjects.map((project) => (
-                <Cell data={project} key={project.title} />
-              ))}
-            </div>
-          </section>
-        )}
+          ))}
+        </div>
       </section>
     </PageWrapper>
   );
