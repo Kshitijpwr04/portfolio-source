@@ -14,22 +14,10 @@ const data: ProjectItem[] = [
     description: 'Terraform-based IAM automation across Azure, AWS, and GCP with RBAC and policy enforcement.',
   },
   {
-    title: 'Centralized platform integrating IAM, threat detection, and risk analytics to enable identity-driven security operations and response.',
-    url: 'https://github.com/yourusername/project2',
-    image: '/images/project2.png',
-    description: 'SIEM + SOAR lab using Sentinel and Chronicle with real-time detection rules.',
-  },
-  {
-    title: 'Zero Trust Architecture Simulator',
-    url: 'https://github.com/yourusername/project3',
-    image: '/images/project3.png',
-    description: 'Implements Zero Trust using Entra ID, Conditional Access, and micro-segmentation.',
-  },
-  {
-    title: 'Attack Surface Management Tool',
-    url: 'https://github.com/yourusername/project4',
-    image: '/images/project4.png',
-    description: 'SpiderFoot-based ASM platform integrated with OSINT feeds and automation.',
+    title: 'Automated vendor security risk triage across NIST, HIPAA, PCI-DSS, and GDPR — auto-clears low-risk vendors, generates severity-ranked findings, and tracks remediation to closure. Includes an honestly evaluated detection layer: 100% recall on known test cases, 20% on a held-out validation set, documented as a real limitation rather than smoothed over.',
+    url: 'https://kshitijpwr04.github.io/vendor-risk-triage-engine/',
+    image: '/images/project5.png',
+    description: 'AI-assisted vendor risk triage engine',
   },
 ];
 
