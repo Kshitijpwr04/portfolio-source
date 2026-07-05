@@ -15,7 +15,7 @@ const data: ProjectItem[] = [
   },
   {
     title: 'Automated vendor security risk triage across NIST, HIPAA, PCI-DSS, and GDPR — auto-clears low-risk vendors, generates severity-ranked findings, and tracks remediation to closure. Includes an honestly evaluated detection layer: 100% recall on known test cases, 20% on a held-out validation set, documented as a real limitation rather than smoothed over.',
-    url: 'https://kshitijpwr04.github.io/vendor-risk-triage-engine/',
+    url: 'https://kshitijpwr04.github.io/vendor-risk-triage-engine/dashboard/',
     image: '/images/project5.png',
     description: 'AI-assisted vendor risk triage engine',
   },
