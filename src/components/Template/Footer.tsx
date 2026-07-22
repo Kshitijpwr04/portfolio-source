@@ -94,11 +94,9 @@ export default function Footer() {
             }}
           >
             Security and GRC professional specializing in vendor and third-party
-            risk management, compliance program execution, and control gap
-            analysis across HIPAA, NIST, SOC 2, PCI DSS, and SOX. Focused on
-            designing risk assessment methodology, quantifying risk through
-            control maturity scoring, and driving genuine risk reduction over
-            check-the-box remediation.
+            risk management and compliance across HIPAA, NIST, SOC 2, and PCI
+            DSS. Focused on control gap analysis and driving genuine risk
+            reduction over check-the-box remediation.
           </p>
         </div>
 
