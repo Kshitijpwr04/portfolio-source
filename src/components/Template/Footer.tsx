@@ -49,11 +49,40 @@ export default function Footer() {
         }}
       >
         <div style={{ marginBottom: '40px' }}>
-          <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto', border: '2px solid #c9a96a' }}>
+          <div
+            style={{
+              width: '180px',
+              height: '180px',
+              borderRadius: '50%',
+              overflow: 'hidden',
+              margin: '0 auto',
+              border: '2px solid #c9a96a',
+            }}
+          >
             <ThemePortrait width={180} height={180} />
           </div>
-          <h2 style={{ marginTop: '15px', color: 'var(--color-fg-bold)', fontFamily: "'Times New Roman', Times, serif", fontWeight: 400, textAlign: 'center', fontSize: '30px' }}>Kshitij Bhausaheb Pawar</h2>
-          <p style={{ opacity: 0.8, color: 'var(--color-fg-light)', textAlign: 'center', fontSize: '18px' }}>{currentRole}</p>
+          <h2
+            style={{
+              marginTop: '15px',
+              color: 'var(--color-fg-bold)',
+              fontFamily: "'Times New Roman', Times, serif",
+              fontWeight: 400,
+              textAlign: 'center',
+              fontSize: '30px',
+            }}
+          >
+            Kshitij Bhausaheb Pawar
+          </h2>
+          <p
+            style={{
+              opacity: 0.8,
+              color: 'var(--color-fg-light)',
+              textAlign: 'center',
+              fontSize: '18px',
+            }}
+          >
+            {currentRole}
+          </p>
           <p
             style={{
               marginTop: '12px',
@@ -64,14 +93,28 @@ export default function Footer() {
               textAlign: 'center',
             }}
           >
-            Cybersecurity engineer specializing in cloud security and IAM across Azure, AWS, and GCP.
-            Focused on building secure, scalable architectures and automating threat detection.
-            Passionate about Zero Trust, DevSecOps, and modern security engineering.
+            Security and GRC professional specializing in vendor and third-party
+            risk management, compliance program execution, and control gap
+            analysis across HIPAA, NIST, SOC 2, PCI DSS, and SOX. Focused on
+            designing risk assessment methodology, quantifying risk through
+            control maturity scoring, and driving genuine risk reduction over
+            check-the-box remediation.
           </p>
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '10px', color: 'var(--color-fg-bold)', fontFamily: "'Times New Roman', Times, serif", fontWeight: 400, textAlign: 'center', fontSize: '20px' }}>Connect</h4>
+          <h4
+            style={{
+              marginBottom: '10px',
+              color: 'var(--color-fg-bold)',
+              fontFamily: "'Times New Roman', Times, serif",
+              fontWeight: 400,
+              textAlign: 'center',
+              fontSize: '20px',
+            }}
+          >
+            Connect
+          </h4>
           <ContactIcons />
         </div>
       </div>

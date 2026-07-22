@@ -24,19 +24,22 @@ export default function Hero() {
           <ThemePortrait width={250} height={250} priority />
         </div>
 
-        <h1 className="hero-title" style={{ fontSize: 'clamp(28px, 6vw, 48px)' }}>
+        <h1
+          className="hero-title"
+          style={{ fontSize: 'clamp(28px, 6vw, 48px)' }}
+        >
           <span className="hero-name">Kshitij Bhausaheb Pawar</span>
         </h1>
 
         <p className="hero-tagline">
-          Security Engineer working with Azure, AWS & GCP, Expert in Identity
-          and Access Mangament, SIEM and DevSecOps and AI Security.
+          Security and GRC professional with 3+ years leading vendor and
+          third-party risk assessments, compliance program execution, and
+          control gap analysis across HIPAA, NIST, SOC 2, PCI DSS, and SOX.
         </p>
 
         <div className="hero-chips">
           <span className="hero-chip">Rutgers Alum</span>
           <span className="hero-chip">IEEE Security Researcher</span>
-          
         </div>
 
         <div className="hero-cta">
