@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 
-
 import Education from '@/components/Resume/Education';
 import Experience from '@/components/Resume/Experience';
 import References from '@/components/Resume/References';
@@ -25,13 +24,28 @@ export default function ResumePage() {
       <section className="resume-page">
         <header className="resume-header">
           <h2 className="resume-title">Resume</h2>
-          <p className="resume-summary" style={{ maxWidth: '100%', width: '100%', fontSize: '18px', lineHeight: '1.6' }}>
-            Security Engineer with 3 years of experience in cloud security, IAM, and security program 
-            development across Azure, AWS, and GCP environments. Expertise in identity governance, 
-            Zero Trust architecture, CSPM, DevSecOps, and threat detection using Microsoft Sentinel and 
-            Google Chronicle, with a strong compliance foundation across HIPAA, NIST, and SOX frameworks. 
-            Proven ability to design and automate scalable security solutions in hybrid cloud environments serving 
-            regulated industries including healthcare and financial services. Microsoft Certified SC-100, SC-300, SC-200, AZ-500.
+          <p
+            className="resume-summary"
+            style={{
+              maxWidth: '100%',
+              width: '100%',
+              fontSize: '18px',
+              lineHeight: '1.6',
+            }}
+          >
+            Security and GRC professional with 3+ years of experience leading
+            vendor and third-party risk assessments, compliance program
+            execution, and control gap analysis across HIPAA, NIST RMF, NIST
+            800-53, SOC 2, PCI DSS, and SOX frameworks in healthcare and
+            regulated industries. Skilled in designing risk assessment
+            methodology and questionnaires, quantifying risk through control
+            maturity scoring, and partnering with risk owners, legal, and
+            procurement to negotiate risk treatment plans through to closure.
+            Working knowledge of GRC platforms including OneTrust, with strong
+            foundations in Identity and Access Management (Microsoft Entra ID,
+            Zero Trust architecture) supporting audit readiness and POA&M
+            remediation tracking. Microsoft Certified SC-100, SC-300, SC-200,
+            AZ-500.
           </p>
         </header>
 

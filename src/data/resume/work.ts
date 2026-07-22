@@ -13,63 +13,63 @@ export interface Position {
 
 const work: Position[] = [
   {
-    name: 'Source Sphere LLC',
+    name: 'Source Sphere LLC, New Jersey, USA',
     position: 'Security Engineer',
     url: '',
     startDate: '2025-12',
     endDate: 'Present',
     summary: '',
     highlights: [
-      'Built a multi-cloud CSPM program using Defender for Cloud, AWS Security Hub, and GCP SCC; remediated critical misconfigurations enforcing encryption, network segmentation, and audit logging aligned with HIPAA and HITECH.',
-      'Embedded security guardrails into Azure DevOps and GitHub Actions CI/CD pipelines using Azure Policy, OPA, and Terraform; enforced secrets scanning, IaC checks, and least-privilege service principal controls across cloud deployments.',
-      'Centralized threat detection across Azure, AWS, and on-prem by ingesting logs into Google Chronicle and Microsoft Sentinel; built detection rules targeting PHI exfiltration and anomalous access patterns, reducing MTTD by 35%.',
-      'Led HIPAA and SOC 2 compliance engineering by configuring BAA-eligible services, enforcing TLS 1.2+ encryption, and automating audit evidence collection; delivered gap assessments and remediation roadmaps supporting external audit readiness.'
-    ]
+      'Owned end-to-end HIPAA and SOC 2 compliance engineering — conducted control gap assessments, mapped findings to NIST 800-53 and SOC 2 Trust Services Criteria, developed remediation roadmaps, and delivered audit-ready documentation supporting external audit readiness.',
+      'Conducted RFI-based vendor due diligence reviews, assessing security questionnaire responses, SOC 2 reports, and BAA documentation to identify control gaps and quantify risk exposure for risk owners and procurement stakeholders.',
+      'Enforced least-privilege identity controls and service principal governance across Azure DevOps and GitHub Actions pipelines using Azure Policy and Terraform; managed secrets lifecycle and access scoping aligned to Zero Trust principles.',
+      'Developed and negotiated risk treatment plans with vendor risk owners for identified control gaps, prioritizing genuine risk reduction over check-the-box remediation, and tracked findings to closure ahead of audit cycles.',
+      'Supported business continuity and disaster recovery assessments for critical third-party vendors, evaluating RTO/RPO commitments and continuity documentation against organizational resilience requirements.',
+    ],
   },
   {
-    name: 'Baanyan Software Services Inc.',
+    name: 'Baanyan Software Services Inc., New Jersey, USA',
     position: 'Security Analyst',
     url: '',
     startDate: '2024-11',
     endDate: '2025-09',
     summary: '',
     highlights: [
-      'Configured Microsoft Entra ID and on-prem AD with SSO, MFA, Conditional Access, and PIM (JIT), enforcing Zero Trust and meeting compliance requirements including NIST, CIS, HIPAA, GLBA, and SOX across hybrid cloud (Azure/AWS).',
-      'Integrated 15+ SaaS/LOB apps using SAML 2.0, OAuth 2.0, and LDAP; onboarded Google as an OIDC IdP in Azure Entra ID; automated access reviews and role assignments via SailPoint IdentityIQ and Entra workflows.',
-      'Automated least-privilege IAM in AWS using Terraform, CloudFormation, and IAM Identity Center (JIT + ABAC); enforced CI/CD DevSecOps-based access management and eliminated standing admin access across accounts.',
-      'Hardened GCP IAM with custom roles, Org Policies, and SCC; configured workload identity federation and forwarded threat logs to Chronicle SIEM for centralized detection.'
-    ]
+      "Led a full-scope security risk assessment for a healthcare client following a confirmed data breach, initiated in response to a cyber insurance carrier's post-incident compliance mandate covering HIPAA, NIST 800-53, CIS Controls, and PCI DSS.",
+      'Supported post-incident vendor risk reviews by assessing existing business associate agreements and third-party access controls against updated HIPAA and PCI DSS requirements, recommending enhanced due diligence criteria for future vendor onboarding.',
+      'Engineered a consolidated risk assessment questionnaire by cross-mapping control requirements across four regulatory frameworks, eliminating redundant assessment effort while preserving full compliance coverage.',
+      'Authored an executive-level risk assessment report with quantified risk and compliance scoring, presented to leadership and submitted to the insurance carrier to support remediation planning and claims resolution.',
+      "Conducted comprehensive asset discovery and inventory across on-prem networks, endpoints, cloud accounts (Azure/AWS), and IAM configurations to establish assessment scope and identify systems within the breach's blast radius.",
+      'Delivered a consolidated risk assessment report with quantified risk scores and compliance percentages per framework, translating technical findings into executive-level reporting for insurance carrier submission and remediation planning.',
+    ],
   },
   {
-    name: 'Collaborative Solutions LLC',
+    name: 'Collaborative Solutions LLC, Remote, USA',
     position: 'Cybersecurity Risk Analyst Extern',
     url: '',
     startDate: '2023-01',
     endDate: '2023-05',
     summary: '',
     highlights: [
-      'Conducted RMF-based risk assessments on legacy rail systems and TSA-regulated infrastructure, identifying misconfigurations and control gaps that reduced vulnerability exposure by 35% through targeted POA&M remediation.',
-      'Developed risk treatment plans by analyzing compliance drift and continuous monitoring data; translated technical findings into executive-level reports and proposed mitigations aligned with organizational risk posture.',
-      'Performed asset discovery and threat identification across PTC and signaling networks, mapping insecure protocols and unauthorized access risks to NIST CSF categories and reporting high-risk findings.',
-      'Delivered audit-ready documentation aligned with TSA SD 1580/82-2022 and NIST 800-82; supported continuous monitoring and enhanced stakeholder awareness of residual risk across OT infrastructure.'
-    ]
+      'Led end-to-end RMF-based risk assessments on TSA-regulated infrastructure; scoped assessments by asset type, evaluated control effectiveness against NIST 800-53, identified gaps, and reduced vulnerability exposure by 35% through targeted POA&M remediation tracking.',
+      'Developed risk treatment plans by analyzing compliance drift and continuous monitoring data; partnered with risk owners to prioritize genuine risk reduction, tracked findings to closure, and translated technical results into executive-level risk reports.',
+      'Built and maintained audit-ready documentation aligned to NIST 800-53 and NIST 800-82; supported continuous monitoring activities and delivered KRI/KPI-style findings reports to senior stakeholders on residual risk posture.',
+    ],
   },
   {
-    name: 'NJ Cybersecurity & Communications Integration Cell',
+    name: 'NJ Cybersecurity & Communications Integration Cell, New Jersey, USA',
     position: 'Security Automation Extern',
     url: '',
     startDate: '2022-09',
     endDate: '2023-01',
     summary: '',
     highlights: [
-      'Architected and containerized a SpiderFoot–based Attack Surface Management (ASM) platform on AWS EC2, providing 24×7 discovery of external-facing assets and cutting exposure window by ≈35%.',
+      'Architected an AWS-based attack surface management platform integrating 20+ OSINT and threat-intel feeds; hardened AWS infrastructure to CIS benchmarks and briefed leadership on high-risk findings including misconfigured services and credential exposures.',
       'Integrated 20+ OSINT and threat-intel feeds (Shodan, HIBP, VirusTotal, etc.) to automate passive/active reconnaissance and vulnerability enumeration across hybrid cloud.',
-      'Hardened AWS stack—VPC design, Security Groups, IAM least privilege, Linux hardening, Docker isolation—meeting CIS benchmarks and ensuring scalable, secure ops.',
-      'Prioritized high-risk findings (misconfigured services, leaked creds) and briefed NJCCIC leadership; the project streamlined threat-intel workflows and boosted situational awareness for statewide stakeholders.'
-    ]
+    ],
   },
   {
-    name: 'National Technical & R D Committee',
+    name: 'National Technical & R D Committee, India',
     position: 'Digital Forensics Analyst Intern',
     url: '',
     startDate: '2021-03',
@@ -78,9 +78,9 @@ const work: Position[] = [
     highlights: [
       'Executed forensic investigations using Autopsy, FTK Imager, Wireshark, and Volatility, preserving evidence integrity per ISO/IEC 27037.',
       'Built a Python-Scapy ARP spoofing detector with real-time alerting, reducing incident response time by 40%.',
-      'Extracted IOCs from memory dumps and PCAPs to support rapid threat attribution and IR containment.'
-    ]
-  }
+      'Extracted IOCs from memory dumps and PCAPs to support rapid threat attribution and IR containment.',
+    ],
+  },
 ];
 
 export default work;

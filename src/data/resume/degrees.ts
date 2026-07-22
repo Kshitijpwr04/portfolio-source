@@ -8,15 +8,15 @@ export interface Degree {
 
 const degrees: Degree[] = [
   {
-    school: 'Rutgers, The State University of New Jersey',
-    degree: 'Masters of Business and Science',
-    major: 'Computer and Information Science (Cybersecurity)',
+    school: 'Rutgers University, New Brunswick, NJ',
+    degree: 'Master of Business & Science',
+    major: 'Cybersecurity, GPA 3.83/4.0',
     year: '2024',
   },
   {
-    school: 'SRM Institute of Science and Technology',
-    degree: 'Bachelor of Technology (B.Tech)',
-    major: 'Computer Science and Engineering',
+    school: 'SRM Institute of Science and Technology, India',
+    degree: 'Bachelor of Technology',
+    major: 'Computer Science',
     year: '2022',
   },
 ];
